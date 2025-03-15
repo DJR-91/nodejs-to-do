@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_DJR_91_nodejs_to_do_1742074678172-push-trigger-input-set
+  identifier: Build_DJR_91_nodejs_to_do_1742074678172pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: ToDoApp
+  pipeline:
+    identifier: Build_DJR_91_nodejs_to_do_1742074678172
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
