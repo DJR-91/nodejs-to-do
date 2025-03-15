@@ -13,12 +13,15 @@ pipeline:
           execution:
             steps:
               - step:
-                  type: Run
-                  name: Echo Welcome Message
-                  identifier: Echo_Welcome_Message
+                  type: BuildAndPushDockerRegistry
+                  name: Build and Push to Docker
+                  identifier: Build_and_Push_to_Docker
                   spec:
-                    shell: Sh
-                    command: echo "Welcome to Harness CI"
+                    connectorRef: account.djreed1991dockerregistry
+                    repo: djreed1991/to-do
+                    tags:
+                      - latest
+                      - to-do
           platform:
             os: Linux
             arch: Amd64
