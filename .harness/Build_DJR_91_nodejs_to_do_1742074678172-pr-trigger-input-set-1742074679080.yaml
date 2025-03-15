@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_DJR_91_nodejs_to_do_1742074678172-pr-trigger-input-set
+  identifier: Build_DJR_91_nodejs_to_do_1742074678172prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: ToDoApp
+  pipeline:
+    identifier: Build_DJR_91_nodejs_to_do_1742074678172
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
